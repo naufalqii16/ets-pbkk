@@ -21,53 +21,32 @@
                 <form name="form" id="form" method="POST" action="{{url('employee')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
-                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <label for="pasienID" class="col-sm-2 col-form-label">pasien_id</label>
                       <div class="col-sm-4">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
+                        <input type="text" class="form-control" id="pasien_id" placeholder="pasien_id" name="pasien_id">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="dokterID" class="col-sm-2 col-form-label">dokter_id</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="dokter_id" placeholder="dokter_id" name="dokter_id">
                       </div>
                     </div>
 
                     <div class="form-group row">
-                      <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                      <label for="kondisi" class="col-sm-2 col-form-label">kondisi</label>
                       <div class="col-sm-4">
-                        <input type="text" class="form-control" id="inputName3" placeholder="Name" name="name">
+                        <input type="text" class="form-control" id="kondisi" placeholder="kondisi" name="kondisi">
                       </div>
                     </div>
 
                     <div class="form-group row">
-                      <label for="inputNRP3" class="col-sm-2 col-form-label">NRP</label>
+                      <label for="suhu_tubuh" class="col-sm-2 col-form-label">suhu_tubuh(C)</label>
                       <div class="col-sm-4">
-                        <input type="text" class="form-control" id="inputNRP3" placeholder="NRP" name="NRP">
+                        <input type="decimal" class="form-control" id="suhu_tubuh" placeholder="suhu_tubuh" name="suhu_tubuh">
                       </div>
                     </div>
 
-
-                    <fieldset class="form-group">
-                      <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                        <div class="col-sm-4">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="genderRadios" id="gridRadios1" value="Laki-laki" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Laki-Laki
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="genderRadios" id="gridRadios2" value="Perempuan">
-                            <label class="form-check-label" for="gridRadios2">
-                              Perempuan
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-
-                    <div class="form-group row">
-                        <label for="inputWeight3" class="col-sm-2 col-form-label">Weight</label>
-                        <div class="col-sm-4">
-                          <input type="number" class="form-control" id="inputWeight3" placeholder="Weight" min="2.5" max="99.99" step="0.01" name="weight">
-                        </div>
-                      </div>
 
                     <div class="form-group row">
                         <label for="inputPhoto3" class="col-sm-2 col-form-label">Personal Photo</label>
